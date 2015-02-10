@@ -9,16 +9,17 @@ R2C3 <- function(message, width = NULL, height = NULL) {
 
   # forward options using x
   x = list(
-    message = message
+  message = message
   )
 
   # create widget
   htmlwidgets::createWidget(
-    name = 'R2C3',
-    x,
-    width = width,
-    height = height,
-    package = 'R2C3'
+      name = 'R2C3',
+      x,
+      width = width,
+      height = height,
+      package = 'R2C3',
+      elementId = 'chart'
   )
 }
 
