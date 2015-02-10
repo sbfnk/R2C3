@@ -7,10 +7,13 @@
 #' @export
 R2C3 <- function(message, width = NULL, height = NULL) {
 
-  # forward options using x
-  x = list(
-  message = message
-  )
+    # forward options using x
+
+    message[["bindto"]] <- "#chart"
+
+    x = list(
+    message = message
+        )
 
   # create widget
   htmlwidgets::createWidget(
