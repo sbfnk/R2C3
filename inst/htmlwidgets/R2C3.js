@@ -13,9 +13,9 @@ HTMLWidgets.widget({
 
   renderValue: function(el, x, instance) {
 
-      x.message.bindto = "#" + el.id;
+      x.data.bindto = "#" + el.id;
       
-      var chart = c3.generate(x.message);
+      var chart = c3.generate(x.data);
   },
 
   resize: function(el, width, height, instance) {
