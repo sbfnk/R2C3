@@ -5,14 +5,12 @@
 #' @import htmlwidgets
 #'
 #' @export
-R2C3 <- function(message, width = NULL, height = NULL) {
+R2C3 <- function(data, width = NULL, height = NULL) {
 
     # forward options using x
 
-    message[["bindto"]] <- "#chart"
-
     x = list(
-    message = message
+    data = data
         )
 
   # create widget
